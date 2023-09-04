@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>3ra preentrega</title>
+  </head>
+  <body>
+
+
+    <div class="nav-container">
+      <h1 class="logo">Libreria Menta.</h1>
+    
+      <nav class="navbar">   
+          <button id="btn-login" class="btn">Login</button>
+          <button id="btn-logup"  class="btn">Login Up</button>
+          <div id="msj-login"></div>
+          <h1 class="btn ver-carrito" id="verCarrito"><img src="img/icono-carrito.png"><span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
+      </nav>
+    </div>
+
+    <main>
+          <!--login/logup-->
+          <section id="login-user">
+            <form id="formulario" class="formulario d-none">
+                    <input type="text" placeholder="Usuario"/>
+                    <input type="text" placeholder="Contraseña" />
+                    <input type="submit" value="Enviar" />
+            </form>
+            <button id="btn-register"  class="btn d-none">¿No tenés cuenta? Registrate acá</button>
+            
+            <form id="formularioRegister" class="formularioRegister d-none">
+                <label>Ingrese un nombre de usuario:</label><input type="text" />
+        
+                <label>Ingrese una contraseña :</label><input type="text" />
+                    <input type="submit" value="Enviar" />
+              </form>
+            <div id="msj-session"></div>
+        </section>
+
+
+          <!--libros-->
+          <h1>Estos son todos nuestros productos</h1>
+          <div class="container">
+              <div id="listadoProductos" class="listado-productos"></div>
+          </div>
+          <!--modal-->
+          <div id="modal-container" class="modal-container"></div>
+
+   </main>
+
+   <footer>
+        <h3 class="logo">Libreria Menta.</h3>
+   </footer>
+
+    <!--scripts-->
+    <script src="./js/login.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/carrito.js"></script>
+  </body>
+</html>
